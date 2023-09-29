@@ -43,6 +43,6 @@ JavaScript библиотека: **React**
 
 ### 4 Исходный код проекта
 
-- [Frontend](https://github.com/kattymwk/TaskManager).
-- [Backend](https://github.com/Maketfay/TaskManager).
-- [Скрипт создания базы данных](https://github.com/Maketfay/TaskManager).
+- [Frontend](https://github.com/kattymwk/TaskManager)
+- [Backend](https://github.com/Maketfay/TaskManager)
+- [Скрипт создания базы данных](https://github.com/Maketfay/TaskManager)
