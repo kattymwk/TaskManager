@@ -20,9 +20,7 @@ package "Database" {
   [MySQL] as DB
 }
 
-UI --> UM : HTTP
-UM --> DB : JDBC
-BM --> DB : JDBC
-CM --> DB : JDBC
+Frontend --> Backend : HTTP
+Backend --> Frontend :HTTP
 
 @enduml
