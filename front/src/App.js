@@ -1,10 +1,8 @@
 import Home from './components/Home';
 import { Routes, Route, BrowserRouter, NavLink } from "react-router-dom"
-import LoginPage from './components/login/LoginPage';
 import { ThemeProvider, Typography, createTheme } from '@mui/material';
-import Button from './components/Button';
-import Registration from "./components/registration/Registration";
 import React, {useState} from "react";
+import AuthPage from "./components/auth/AuthPage";
 
 export const UserContext = React.createContext();
 
@@ -29,9 +27,8 @@ const App = () => {
           <UserContext.Provider value={{user,setUser}}>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/btn" element={<Button props="matvey" />} />
-            <Route path="/login" element={<LoginPage />} />
-            <Route path="/registration" element={<Registration />} />
+            <Route path="/login" element={<AuthPage isExist={true} />} />
+            <Route path="/registration" element={<AuthPage isExist={false} />} />
             <Route path="*" element={<Typography>Not found</Typography>} />
           </Routes>
             </UserContext.Provider>

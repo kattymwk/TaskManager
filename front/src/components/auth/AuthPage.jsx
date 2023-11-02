@@ -1,10 +1,10 @@
-import React, {Fragment, useContext, useState} from "react";
-import { Box, Button, TextField, Typography } from "@mui/material";
-import { NavLink } from "react-router-dom";
+import React, {Fragment, useContext, useState} from 'react';
 import {methods} from "../../api/methods";
 import {UserContext} from "../../App";
+import {Box, Button, TextField, Typography} from "@mui/material";
+import {NavLink} from "react-router-dom";
 
-const LoginPage = () => {
+const AuthPage = ({isExist}) => {
 
     const [creds, setCreds] = useState({
         name: "",
@@ -24,24 +24,24 @@ const LoginPage = () => {
     return (
         <Fragment>
             <Box sx={{
-                display: "flex", 
+                display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
                 height: "100vh"
             }}>
                 <Box sx={{
-                    display: "flex", 
-                    flexDirection: "column", 
-                    gap: "20px", 
+                    display: "flex",
+                    flexDirection: "column",
+                    gap: "20px",
                     alignItems: "center",
                     p: "50px",
                     bgcolor: "#e4e4e4",
                     borderRadius: "10px"
                 }}>
-                    <Typography variant="h4">Login</Typography>
+                    <Typography variant="h4">{isExist ? "Login" : "Register"}</Typography>
                     <TextField value={creds.name} onChange={(e) => setCreds({...creds, name: e.target.value})} label="name"/>
                     <TextField value={creds.password} onChange={(e) => setCreds({...creds, password: e.target.value})} label="password"/>
-                    <Button variant="contained" onClick={handleClick}>Login</Button>
+                    <Button variant="contained" onClick={handleClick}>{isExist ? "Login" : "Register"}</Button>
 
                     <NavLink to="/">
                         на главную
@@ -50,6 +50,6 @@ const LoginPage = () => {
             </Box>
         </Fragment>
     );
-}
+};
 
-export default LoginPage;
+export default AuthPage;
