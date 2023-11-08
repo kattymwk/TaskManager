@@ -1,6 +1,7 @@
 import React, {useContext, useState} from "react";
-import { Box, Typography} from "@mui/material"
+import { Box, Typography, Button} from "@mui/material"
 import {UserContext} from "../App";
+import {NavLink} from "react-router-dom";
 
 
 const Home = () => {
@@ -15,6 +16,18 @@ const Home = () => {
             {
                 user.isAuthenticated ? "true" : "false"
             }
+            <br/>
+            <Button variant="outlined" color="success">
+                <NavLink to="/login">
+                    login
+                </NavLink>
+            </Button>
+            <br/> <br/>
+            <Button variant="outlined" color="error">
+                <NavLink to="/registration">
+                    registration
+                </NavLink>
+            </Button>
         </Box>
     );
 }
