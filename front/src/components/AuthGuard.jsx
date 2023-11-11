@@ -1,10 +1,10 @@
 import React, {Fragment, useContext, useState} from 'react';
-import {methods} from "../../api/methods";
-import {UserContext} from "../../App";
+import {methods} from "../api/methods";
+import {UserContext} from "../Main";
 import {Box, Button, TextField, Typography} from "@mui/material";
 import {NavLink} from "react-router-dom";
 
-const AuthPage = ({isExist}) => {
+const AuthGuard = ({isExist}) => {
 
     const [creds, setCreds] = useState({
         name: "",
@@ -52,4 +52,4 @@ const AuthPage = ({isExist}) => {
     );
 };
 
-export default AuthPage;
+export default AuthGuard;
