@@ -5,23 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="175513d1-66b2-4d49-8aea-c9face044d5c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/front/src/pages/AuthPage.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/src/pages/NotFound.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/src/pages/Workspace.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/src/style/auth-page.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/src/style/footer.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/src/style/header.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/src/style/home.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/src/style/reset.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/src/style/side-bar.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/src/style/workspace.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/Main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/Main.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/components/Account.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/Account.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/components/AuthGuard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/AuthGuard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/pages/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/pages/Home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/requirements/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/requirements/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +54,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/BSUIR/3course/jcrpo/TaskManager/front/public/assets&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/BSUIR/3course/jcrpo/TaskManager/front/src/img&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -80,14 +66,16 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\BSUIR\3course\jcrpo\TaskManager\front\src\img" />
       <recent name="C:\BSUIR\3course\jcrpo\TaskManager\front\public\assets" />
       <recent name="C:\BSUIR\3course\jcrpo\TaskManager\front\public\assets\action" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\BSUIR\3course\jcrpo\TaskManager\documentation\requirements" />
+      <recent name="C:\BSUIR\3course\jcrpo\TaskManager\front\src\components\workspace" />
       <recent name="C:\BSUIR\3course\jcrpo\TaskManager\front\src\components" />
       <recent name="C:\BSUIR\3course\jcrpo\TaskManager\front\public\assets\action" />
       <recent name="C:\BSUIR\3course\jcrpo\TaskManager\documentation\diagrams\component\img" />
-      <recent name="C:\BSUIR\3course\jcrpo\TaskManager\documentation\diagrams\sequence\img" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -109,7 +97,8 @@
       <workItem from="1699688301736" duration="5015000" />
       <workItem from="1699703538528" duration="3480000" />
       <workItem from="1700079448521" duration="157000" />
-      <workItem from="1700131189516" duration="292000" />
+      <workItem from="1700131189516" duration="1923000" />
+      <workItem from="1700161778899" duration="5244000" />
     </task>
     <servers />
   </component>
