@@ -19,6 +19,7 @@ const Header = () => {
             username: "",
             aud:"",
             isAuth: false,
+            exp: 0
         })
     }
 
@@ -36,7 +37,6 @@ const Header = () => {
 
     const fetchData = async () => {
         const token =JSON.parse(localStorage.getItem("token")).accessToken
-        console.log(token)
         const data = await methods.getWorkSpaces(token)
         setWorkspaces(data.data)
     }
@@ -45,7 +45,6 @@ const Header = () => {
         if(user.isAuth) {
             fetchData()
         }
-        console.log(workspaces)
     }, [anchorEl]);
 
 
@@ -55,7 +54,7 @@ const Header = () => {
 
                 <Box className={classes.header_nav}>
                     <NavLink className={classes.logo} to="/">
-                        <img style={{height:"60px" , width:"100%",padding:"10px"}} src="./assets/logo.png" alt=""/>
+                        <img style={{height:"60px" , minWidth:"70px",padding:"10px"}} src="./assets/logo.png" alt=""/>
                     </NavLink>
 
                     {
@@ -78,8 +77,8 @@ const Header = () => {
                                 >
                                     {
                                         workspaces.length !== null &&
-                                        workspaces.map((item,index) => (<NavLink to={"/workspace/" + item.id}>
-                                                <MenuItem key={index} onClick={handleClose}>{item.name}</MenuItem>
+                                        workspaces.map((item,index) => (<NavLink key={index} to={"/workspace/" + item.id}>
+                                                <MenuItem  onClick={handleClose}>{item.name}</MenuItem>
                                             </NavLink>
                                         ))
                                     }

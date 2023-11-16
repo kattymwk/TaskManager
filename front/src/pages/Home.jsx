@@ -1,6 +1,8 @@
 import React, {useEffect, useState} from 'react'
 import {Box} from "@mui/material";
+
 import classes from "../style/home.module.css"
+
 import cards from "../json/productivity-card.json"
 import CardProductivity from "../components/CardProductivity";
 import CardAction from "../components/CardAction";

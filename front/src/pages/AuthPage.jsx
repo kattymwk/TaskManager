@@ -42,12 +42,14 @@ const AuthPage = ({isExist}) => {
             localStorage.setItem("token" , JSON.stringify(data))
 
             const decode = parseToken(data.accessToken)
+            console.log(decode)
 
             setUser({
                 id: decode.sid,
                 username: decode.name,
                 aud:decode.aud,
                 isAuth: true,
+                exp: decode.exp
             })
 
             navigate("/")
@@ -56,7 +58,8 @@ const AuthPage = ({isExist}) => {
             console.log("register")
             const response = await methods.register(creds)
             const data = await response.data
-            localStorage.setItem(data)
+            console.log(data)
+            localStorage.setItem("token" , JSON.stringify(data))
 
             const decode = parseToken(data.accessToken)
 
@@ -65,8 +68,9 @@ const AuthPage = ({isExist}) => {
                 username: decode.name,
                 aud:decode.aud,
                 isAuth: true,
+                exp: decode.exp
             })
-
+            navigate("/")
         }
     }
 

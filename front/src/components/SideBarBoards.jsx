@@ -12,12 +12,8 @@ import {NavLink} from "react-router-dom";
 import WorkspacesIcon from '@mui/icons-material/Workspaces';
 
 
-
 const SideBarBoards = () => {
 
-    const handleCreateWorkspace = () => {
-        console.log('Создать доску');
-    };
 
 
     return (
@@ -32,15 +28,15 @@ const SideBarBoards = () => {
                             <ListItemText primary="My spaces" />
                         </ListItem>
                     </NavLink>
-                    <NavLink style={{textDecoration:"none",color:"black"}} to="/workspace/desks">
+                    <NavLink style={{textDecoration:"none",color:"black"}} to="desks">
                         <ListItem button>
                             <ListItemIcon>
                                 <DashboardIcon />
                             </ListItemIcon>
-                            <ListItemText primary="Boards" />
+                            <ListItemText primary="Desks" />
                         </ListItem>
                     </NavLink>
-                    <NavLink style={{textDecoration:"none",color:"black"}} to="/workspace/messages">
+                    <NavLink style={{textDecoration:"none",color:"black"}} to="messages">
                         <ListItem button>
                             <ListItemIcon>
                                 <MailIcon />
@@ -48,7 +44,7 @@ const SideBarBoards = () => {
                             <ListItemText primary="Messages" />
                         </ListItem>
                     </NavLink>
-                    <NavLink style={{textDecoration:"none",color:"black"}} to="/workspace/account">
+                    <NavLink style={{textDecoration:"none",color:"black"}} to="account">
                         <ListItem button>
                             <ListItemIcon>
                                 <AccountCircleIcon />
@@ -56,12 +52,11 @@ const SideBarBoards = () => {
                             <ListItemText primary="Account" />
                         </ListItem>
                     </NavLink>
-                    <NavLink style={{textDecoration:"none",color:"black"}} to="/workspace/create">
+                    <NavLink style={{textDecoration:"none",color:"black"}} to="create">
                         <Button
                             variant="contained"
                             color="primary"
                             style={{width:"100%"}}
-                            onClick={handleCreateWorkspace}
                         >
                             Создать workspace
                         </Button>
