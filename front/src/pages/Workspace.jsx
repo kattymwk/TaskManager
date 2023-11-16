@@ -7,22 +7,23 @@ import {Routes, Route, useLocation} from "react-router-dom";
 import Account from "../components/Account";
 import {methods} from "../api/methods";
 import NewWorkspace from "../components/workspace/NewWorkspace";
-import MyWorkspace from "../components/workspace/Myworkspace";
+import Desks from "../components/desk/Desks";
+import DeskElement from "../components/desk/DeskElement";
+import MyWorkspace from "../components/workspace/MyWorkspace";
+
+export const DeskContext = React.createContext()
 
 const Workspace = () => {
 
     const location = useLocation()
 
-    const [currentWorkspace, setCurrentWorkspace] = useState({
-        name:"dont use workspace"
-    })
+    const [currentWorkspace, setCurrentWorkspace] = useState({name:"dont used workspace"})
 
     const checkWorkspace = async () => {
 
         const current = location.pathname.substring(11)
 
         const token =JSON.parse(localStorage.getItem("token")).accessToken
-        console.log(token)
         const data = await methods.getWorkSpaces(token)
         const workspaces = await data.data
 
@@ -48,16 +49,20 @@ const Workspace = () => {
                 </Box>
                 <Box className={classes.boadrs}>
 
-                    <SideBarBoards/>
+                    <DeskContext.Provider value={{currentWorkspace,setCurrentWorkspace}}>
+                        <SideBarBoards/>
 
-                    <Routes>
-                        <Route path="/account" element={<Account/>}/>
-                        <Route path="/boards" element={<h2>boards</h2>}/>
-                        <Route path="/messages" element={<h2>messages</h2>}/>
-                        <Route path="/create" element={<NewWorkspace/>}/>
-                        <Route path="/myspace" element={<MyWorkspace/>}/>
+                        <Routes>
+                            <Route path="/account" element={<Account/>}/>
+                            <Route path="/desks" element={<Desks />}/>
 
-                    </Routes>
+                            <Route path="/desks/:id" element={<DeskElement />}/>
+                            <Route path="/messages" element={<h2>messages</h2>}/>
+                            <Route path="/create" element={<NewWorkspace/>}/>
+                            <Route path="/myspace" element={<MyWorkspace/>}/>
+                        </Routes>
+                    </DeskContext.Provider>
+
                 </Box>
             </Box>
         </Box>

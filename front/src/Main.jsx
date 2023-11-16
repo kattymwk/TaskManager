@@ -15,48 +15,49 @@ export const UserContext = React.createContext()
 
 const Main = () => {
 
-  const logout = () => {
-    localStorage.removeItem("token")
-    setUser({
-      id: 0,
-      username: "",
-      aud:"",
-      isAuth: false,
+    const logout = () => {
+        localStorage.removeItem("token")
+        setUser({
+            id: 0,
+            username: "",
+            aud:"",
+            isAuth: false,
+        })
+    }
+
+    const [user, setUser] = useState({
+        id: 0,
+        username: "",
+        aud:"",
+        isAuth: false,
+        exp: 0
     })
-  }
-
-  const [user, setUser] = useState({
-    id: 0,
-    username: "",
-    aud:"",
-    isAuth: false,
-  })
 
 
-  const location = useLocation()
-  const renderHeaderAndFooter = location.pathname !== "/register" &&  location.pathname !== "/login"
+    const location = useLocation()
+    const renderHeaderAndFooter = location.pathname !== "/register" &&  location.pathname !== "/login"
 
-  return (
-      <Box>
-        <UserContext.Provider value={{user,setUser}}>
-          {renderHeaderAndFooter && <Header/>}
-          <Box style={{ minHeight:"80vh"}}>
-           <AuthGuard>
-              <Routes>
-                <Route path="/" element={<Home/>}/>
-                <Route path="/login" element={<AuthPage isExist={true}/>}/>
-                <Route path="/register" element={<AuthPage isExist={false}/>}/>
-                <Route path="*" element={<NotFound/>}/>
+    return (
+        <Box>
+            <UserContext.Provider value={{user,setUser}}>
+                {renderHeaderAndFooter && <Header/>}
+                <Box style={{ minHeight:"80vh"}}>
+                    <AuthGuard>
+                        <Routes>
+                            <Route path="/" element={<Home/>}/>
+                            <Route path="/login" element={<AuthPage isExist={true}/>}/>
+                            <Route path="/register" element={<AuthPage isExist={false}/>}/>
+                            <Route path="*" element={<NotFound/>}/>
 
-                <Route path="/workspace/*" element={<Workspace />} />
+                            <Route path="/workspace/*" element={<Workspace />} />
 
-              </Routes>
-            </AuthGuard>
-          </Box>
-          {renderHeaderAndFooter && <Footer />}
-        </UserContext.Provider>
-      </Box>
-  );
+                        </Routes>
+                    </AuthGuard>
+                </Box>
+                {renderHeaderAndFooter && <Footer />}
+            </UserContext.Provider>
+        </Box>
+    );
 };
 
 export default Main;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Box, Button, makeStyles} from "@mui/material";
+import {Box, Button} from "@mui/material";
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemIcon from '@mui/material/ListItemIcon';
@@ -32,7 +32,7 @@ const SideBarBoards = () => {
                             <ListItemText primary="My spaces" />
                         </ListItem>
                     </NavLink>
-                    <NavLink style={{textDecoration:"none",color:"black"}} to="/workspace/boards">
+                    <NavLink style={{textDecoration:"none",color:"black"}} to="/workspace/desks">
                         <ListItem button>
                             <ListItemIcon>
                                 <DashboardIcon />
