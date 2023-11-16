@@ -41,7 +41,7 @@ const Main = () => {
         <UserContext.Provider value={{user,setUser}}>
           {renderHeaderAndFooter && <Header/>}
           <Box style={{ minHeight:"80vh"}}>
-            <AuthGuard>
+           <AuthGuard>
               <Routes>
                 <Route path="/" element={<Home/>}/>
                 <Route path="/login" element={<AuthPage isExist={true}/>}/>

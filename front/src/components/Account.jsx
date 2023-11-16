@@ -1,50 +1,33 @@
-import React, {Fragment, useCallback, useContext, useEffect, useState} from "react";
-import { UserContext } from "../Main";
-import { useNavigate } from "react-router-dom"
-import {jwtDecode} from 'jwt-decode';
+import React, {useContext} from 'react';
+import {Box, Typography} from "@mui/material";
+import {UserContext} from "../Main";
 
+const Account = () => {
 
-const AuthGuard = (props) => {
-    const { children } = props;
+    const {user,setUser} = useContext(UserContext)
 
-    const navigate = useNavigate()
+    return (
+        <Box  sx={{
+            marginTop:"20px",
+            marginLeft:"100px"
+        }}>
+            Account data:
+            <Box sx={{
+                background:"#b7b7b7",
+                width:"400px",
+                padding:"20px",
+                borderRadius:"20px",
+                marginTop:"20px"
+            }}>
+                <Typography>
+                    {`Username: ${user.username}`}
+                </Typography>
+                <Typography>
+                    {`User id: ${user.id}`}
+                </Typography>
+            </Box>
+        </Box>
+    );
+};
 
-    const {user, setUser} = useContext(UserContext)
-
-    const [checked, setChecked] = useState(false);
-
-    const check = useCallback(() => {
-        if (!localStorage.getItem("token")) {
-            navigate("/login")
-            setUser(prev => {
-                return {
-                    ...prev,
-                    isAuth: false
-                }
-            })
-        }
-        else {
-            const user = jwtDecode(localStorage.getItem("token"));
-
-            setChecked(true)
-            setUser(prev => {
-                return {
-                    ...prev,
-                    id: user.sid,
-                    username: user.name,
-                    aud:user.aud,
-                    isAuth: true,
-                }
-            })
-        }
-    }, [user.isAuth]);
-
-    useEffect(() => {
-        console.log(user)
-        check();
-    }, [user.isAuth]);
-
-    return <Fragment>{children}</Fragment>
-}
-
-export default AuthGuard;
+export default Account;
