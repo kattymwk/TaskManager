@@ -5,9 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="175513d1-66b2-4d49-8aea-c9face044d5c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/documentation/requirements/image/columns.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/requirements/image/desks.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/requirements/image/main.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/requirements/image/signIn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/requirements/image/workspace.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/documentation/requirements/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/requirements/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/components/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/Footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/components/SideBarBoards.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/SideBarBoards.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/components/desk/Desks.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/desk/Desks.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/TestPlan.md" beforeDir="false" afterPath="$PROJECT_DIR$/test/TestPlan.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/TestResult.md" beforeDir="false" afterPath="$PROJECT_DIR$/test/TestResult.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,11 +82,11 @@
       <recent name="C:\BSUIR\3course\jcrpo\TaskManager\front\public\assets\action" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\BSUIR\3course\jcrpo\TaskManager\documentation\requirements\image" />
       <recent name="C:\BSUIR\3course\jcrpo\TaskManager\documentation\requirements" />
       <recent name="C:\BSUIR\3course\jcrpo\TaskManager\front\src\components\workspace" />
       <recent name="C:\BSUIR\3course\jcrpo\TaskManager\front\src\components" />
       <recent name="C:\BSUIR\3course\jcrpo\TaskManager\front\public\assets\action" />
-      <recent name="C:\BSUIR\3course\jcrpo\TaskManager\documentation\diagrams\component\img" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -98,7 +109,8 @@
       <workItem from="1699703538528" duration="3480000" />
       <workItem from="1700079448521" duration="157000" />
       <workItem from="1700131189516" duration="1923000" />
-      <workItem from="1700161778899" duration="5244000" />
+      <workItem from="1700161778899" duration="5439000" />
+      <workItem from="1700235636213" duration="3325000" />
     </task>
     <servers />
   </component>

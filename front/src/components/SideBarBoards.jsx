@@ -36,14 +36,14 @@ const SideBarBoards = () => {
                             <ListItemText primary="Desks" />
                         </ListItem>
                     </NavLink>
-                    <NavLink style={{textDecoration:"none",color:"black"}} to="messages">
-                        <ListItem button>
-                            <ListItemIcon>
-                                <MailIcon />
-                            </ListItemIcon>
-                            <ListItemText primary="Messages" />
-                        </ListItem>
-                    </NavLink>
+                    {/*<NavLink style={{textDecoration:"none",color:"black"}} to="messages">*/}
+                    {/*    <ListItem button>*/}
+                    {/*        <ListItemIcon>*/}
+                    {/*            <MailIcon />*/}
+                    {/*        </ListItemIcon>*/}
+                    {/*        <ListItemText primary="Messages" />*/}
+                    {/*    </ListItem>*/}
+                    {/*</NavLink>*/}
                     <NavLink style={{textDecoration:"none",color:"black"}} to="account">
                         <ListItem button>
                             <ListItemIcon>

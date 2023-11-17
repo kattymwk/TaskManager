@@ -49,7 +49,7 @@ const Desks = () => {
 
     return (
         <Box ml={10} mb={10}>
-            <Typography variant="h4">Boards:</Typography>
+            <Typography variant="h4">Desks:</Typography>
 
             <Box sx={{display:"flex",flexDirection:"row", gap:"20px" , flexWrap:"wrap"}}>
                 {

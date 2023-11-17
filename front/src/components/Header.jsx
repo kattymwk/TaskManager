@@ -84,9 +84,9 @@ const Header = () => {
                                     }
                                 </Menu>
                             </ListItem>
-                            <ListItem>
-                                Favorites
-                            </ListItem>
+                            {/*<ListItem>*/}
+                            {/*    Favorites*/}
+                            {/*</ListItem>*/}
                         </List>
 
                     }
