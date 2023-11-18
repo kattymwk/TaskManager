@@ -13,7 +13,7 @@ const Account = () => {
         }}>
             Account data:
             <Box sx={{
-                background:"#b7b7b7",
+                background:"#e1e1e1",
                 width:"400px",
                 padding:"20px",
                 borderRadius:"20px",

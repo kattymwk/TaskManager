@@ -5,20 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="175513d1-66b2-4d49-8aea-c9face044d5c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/documentation/requirements/image/columns.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documentation/requirements/image/desks.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documentation/requirements/image/main.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documentation/requirements/image/signIn.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documentation/requirements/image/workspace.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/style/text.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/requirements/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/requirements/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/components/Account.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/Account.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/src/components/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/Footer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/src/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/components/SideBarBoards.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/SideBarBoards.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/components/column/Column.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/column/Column.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/components/desk/DeskElement.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/desk/DeskElement.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/components/desk/DeskItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/desk/DeskItem.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/src/components/desk/Desks.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/desk/Desks.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/TestPlan.md" beforeDir="false" afterPath="$PROJECT_DIR$/test/TestPlan.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/TestResult.md" beforeDir="false" afterPath="$PROJECT_DIR$/test/TestResult.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/components/workspace/MyWorkspace.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/workspace/MyWorkspace.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/pages/AuthPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/pages/AuthPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/pages/Workspace.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/pages/Workspace.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/style/auth-page.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/style/auth-page.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/style/footer.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/style/footer.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/style/header.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/style/header.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/style/workspace.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/style/workspace.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +112,8 @@
       <workItem from="1700079448521" duration="157000" />
       <workItem from="1700131189516" duration="1923000" />
       <workItem from="1700161778899" duration="5439000" />
-      <workItem from="1700235636213" duration="3325000" />
+      <workItem from="1700235636213" duration="3466000" />
+      <workItem from="1700290807662" duration="7896000" />
     </task>
     <servers />
   </component>

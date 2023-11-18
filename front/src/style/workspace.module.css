@@ -19,6 +19,8 @@
 
 .title {
     margin-top: 10px;
+    font-size: 18px;
     width: 100%;
-    color: darkblue;
+    color: #000;
+    text-align: center;
 }

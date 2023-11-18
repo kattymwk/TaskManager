@@ -129,7 +129,7 @@ const Column = ({column}) => {
 
             {
                 createCard && <Box sx={{
-                    background:"#a4a4a4",
+                    background:"#cab5e5",
                     padding:"20px",
                     borderRadius:"20px"
                 }}>

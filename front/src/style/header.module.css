@@ -48,6 +48,9 @@
     color: rgb(23, 43, 77);
     width: 120px;
 }
+.menu:hover{
+    background-color: #e1e1e1;
+}
 
 .header_links {
     display:flex;
@@ -90,4 +93,13 @@
     display:flex;
     justify-content:center;
     align-items:center;
+}
+
+.workspace_link {
+    color: #000;
+    text-decoration: none;
+}
+.workspace_link:hover {
+    color: #000;
+    text-decoration: underline;
 }

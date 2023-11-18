@@ -3,6 +3,7 @@ import {methods} from "../../api/methods";
 import {Box, MenuItem} from "@mui/material";
 import {NavLink} from "react-router-dom";
 import close from "../../img/close.png";
+import classes from "../../style/text.module.css"
 
 const MyWorkspace = () => {
 
@@ -29,12 +30,14 @@ const MyWorkspace = () => {
 
 
     return (<Box ml={10} mt={6}>
-            <h3>My workspaces:</h3>
+            <h3 style={{
+                paddingBottom:"20px"
+            }}>My workspaces:</h3>
             {
                 workspaces.length !== null &&
                 workspaces.map((item,index) => (
                     <Box key={index} sx={{display:"flex" , alignItems:"center" , width:"200px" , justifyContent:"space-between"}}>
-                        <NavLink  to={"/workspace/" + item.id}>
+                        <NavLink className={classes.workspace_link} to={"/workspace/" + item.id}>
                             <MenuItem>{item.name}</MenuItem>
                         </NavLink>
                         <img onClick={() => deleteWorkspace(item.id)} style={{width:"15px",height:"15px", cursor:"pointer"}} src={close} alt="close"/>

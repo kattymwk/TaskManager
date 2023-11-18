@@ -44,7 +44,7 @@ const Workspace = () => {
             <Box className={classes.container}>
                 <Box className={classes.title}>
                     {
-                        `Current workspace: ${currentWorkspace.name}`
+                        `Текущее рабочее пространство: ${currentWorkspace.name}`
                     }
                 </Box>
                 <Box className={classes.boadrs}>
@@ -53,14 +53,24 @@ const Workspace = () => {
                         <SideBarBoards/>
 
                         <Routes>
-                            <Route path="/account" element={<Account/>}/>
-                            <Route path="/desks" element={<Desks />}/>
-
-                            <Route path="/desks/:id" element={<DeskElement />}/>
-                            <Route path="/messages" element={<h2>messages</h2>}/>
-                            <Route path="/create" element={<NewWorkspace/>}/>
-                            <Route path="/myspace" element={<MyWorkspace/>}/>
+                            <Route path="/account" element={<Account />} />
+                            {currentWorkspace ? (
+                                <>
+                                    <Route path="/desks" element={<Desks />} />
+                                    <Route path="/desks/:id" element={<DeskElement />} />
+                                </>
+                            ) :
+                                (
+                                    <Route
+                                        path="/desks"
+                                        element={<Box>Please choose a workspace</Box>}
+                                    />
+                                )                           }
+                            {/*<Route path="/messages" element={<h2>messages</h2>}/>*/}
+                            <Route path="/create" element={<NewWorkspace />} />
+                            <Route path="/myspace" element={<MyWorkspace />} />
                         </Routes>
+
                     </DeskContext.Provider>
 
                 </Box>

@@ -30,7 +30,12 @@
     gap:5px;
 }
 
-
+.auth_link{
+    text-decoration: none;
+}
+.auth_link:hover{
+    text-decoration: underline;
+}
 @media (max-width: 430px) {
     .auth_container {
     }

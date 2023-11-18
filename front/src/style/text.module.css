@@ -1,0 +1,7 @@
+.workspace_link{
+    color: #000;
+    text-decoration: none;
+}
+.workspace_link:hover{
+    text-decoration: underline;
+}

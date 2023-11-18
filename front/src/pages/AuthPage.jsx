@@ -98,15 +98,19 @@ const AuthPage = ({isExist}) => {
 
                 <Button onClick={authHandler} variant="contained">Continue</Button>
 
-                <Box className={classes.auth_login}>
-                    <NavLink style={{
-                        color:"black"
-                    }} to= {isExist ? "/register" : "/login"}>
+                <Box className={classes.auth_login} style={{
+                    flexDirection:"row",
+                    gap: 40
+                }}>
+                    <NavLink className={classes.auth_link} style={{
+                        color:"blue"
+                    }
+                    } to= {isExist ? "/register" : "/login"}>
                         {isExist ? "Registration" : "Login"}
                     </NavLink>
 
-                    <NavLink style={{
-                        color:"black"
+                    <NavLink className={classes.auth_link} style={{
+                        color:"black",
                     }} to="/">
                         On main
                     </NavLink>

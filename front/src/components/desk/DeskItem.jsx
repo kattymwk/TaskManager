@@ -4,6 +4,7 @@ import {NavLink} from "react-router-dom";
 
 import close from "../../img/close.png"
 import {methods} from "../../api/methods";
+import classes from "../../style/text.module.css"
 
 const DeskItem = ({desk}) => {
 
@@ -16,7 +17,7 @@ const DeskItem = ({desk}) => {
     return (
 
         <Box sx={{
-            background:"#b2b2b2",
+            background:"#e1e1e1",
             width:"250px",
             height:"50px",
             borderRadius:"20px",
@@ -25,7 +26,7 @@ const DeskItem = ({desk}) => {
             alignItems:"center",
             padding:"5px 10px"
         }}>
-            <NavLink to={`${desk.deskId}`}>
+            <NavLink className={classes.workspace_link} to={`${desk.deskId}`}>
                 <Box>
                     {desk.deskName}
                 </Box>

@@ -40,8 +40,6 @@ const Desks = () => {
         console.log(data)
     }
 
-
-
     useEffect(() => {
         fetchDesk()
         setDeskData({ ...deskData, workSpaceId: currentWorkspace.id });
@@ -49,9 +47,12 @@ const Desks = () => {
 
     return (
         <Box ml={10} mb={10}>
-            <Typography variant="h4">Desks:</Typography>
+            <Typography variant="h4" style={{
+                paddingBottom:"30px",
+                paddingTop:"15px"
+            }}>Desks:</Typography>
 
-            <Box sx={{display:"flex",flexDirection:"row", gap:"20px" , flexWrap:"wrap"}}>
+            <Box sx={{display:"flex",flexDirection:"row", gap:"30px" , flexWrap:"wrap"}}>
                 {
                     deskItems.map((item,index) => (
                         <DeskItem key={index} desk={item}/>

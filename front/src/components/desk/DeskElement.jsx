@@ -45,8 +45,10 @@ const DeskElement = () => {
 
     return (
         <Box ml={10}>
-            <Typography variant="h6">Columns:</Typography>
-            <Box sx={{display:"flex", flexDirection:"row", gap:"20px", flexWrap:"wrap"}}>
+            <Typography variant="h6" style={{
+                paddingBottom:"10px"
+            }}>Columns:</Typography>
+            <Box sx={{display:"flex", flexDirection:"row", gap:"30px", flexWrap:"wrap"}}>
                 {
                     columns.map((item,index) => (
                         <Box key={index} sx={{
@@ -54,7 +56,8 @@ const DeskElement = () => {
                             width:"350px",
                             color:"white",
                             padding:"20px 30px",
-                            height:"100%"
+                            height:"100%",
+                            borderRadius:"15px"
                         }} >
                             <UpdateState.Provider value={{updateState,setUpdateState}}>
                                 <Column column={item}/>
